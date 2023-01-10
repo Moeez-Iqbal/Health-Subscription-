@@ -1,0 +1,66 @@
+# health
+it is a community health membership calculator to calculate the total amount of your monthly subscription
+
+using namespace std;
+# include <iostream>
+int main () {
+	int choice, months,choice1;
+	float charges, adt=200, ch=150, sn=100, fr=300;
+	char  str [10];
+	do
+	{
+		cout<<"\n Community Health Club Membership:"<<"\n";
+		cout<<"1. Aduld Membership:"<<"\n";
+		cout<<"2. Child Membership:"<<"\n";
+		cout<<"3. Senior Membership:"<<"\n";
+		cout<<"4. Foreign Citizenz Membership:"<<"\n";
+		cout<<"\n Enter Choice";
+		cin>>choice;
+		if ( choice <=5)
+		{
+			switch (choice)
+			{
+				case 1:
+					cout<< "For how many Months?";
+					cin>>months;
+					cout<<"Name: ";
+					cin>>str;
+					charges=months*adt;
+					cout<<"The Total Charges are $";
+					cout<< charges <<endl;
+					break;
+				case 2:
+					cout<< "For how many Months?";
+					cin>>months;
+					cout<<"Name: ";
+					cin>> str;
+					charges=months*ch;
+					cout<<"The Total Charges are $";
+					cout<<charges <<endl;
+				    break;
+				case 3:
+					cout<< "For how many Months?";
+					cin>>months;
+					cout<<"Name: ";
+					cin>> str;
+					charges=months*sn;
+					cout<<"The total Charges are $";
+					cout<<charges <<endl;
+					break;
+				case 4:
+					cout<< "For how many Months?";
+					cin>>months;
+					cout<<"Name: ";
+					cin>> str;
+					charges=months*fr;
+					cout<<"The total Charges are $";
+					cout<<charges <<endl;
+					break;
+		        default:
+		        	cout<<"wrong input:";
+					}
+		}
+	}  while (choice=0);
+	    cout <<"Program by Moeez Iqbal:";
+return 1;	
+}
